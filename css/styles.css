@@ -111,6 +111,10 @@ body {
   display: flex;
   margin-left: auto;
 }
+.header-item {
+  display: inline-flex;
+  align-items: center;
+}
 .header-contact-link {
   display: flex;
   align-items: center;
@@ -120,6 +124,14 @@ body {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-text-color);
+}
+.header-contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.header-contact-icon:hover,
+.header-contact-icon:focus {
+  fill: var(--accent-text-color);
 }
 /* .header-contact-link::before{
   content: "";
@@ -136,16 +148,6 @@ body {
 .icon-tel::before{
   background-image: url("../images/tel-icon.svg");
 } */
-.header-item{
-  display: inline-flex;
-  align-items: center;
-}
-.icon-mail{
-  
-}
-.icon-tel{
-  
-}
 .header-contact .header-item + .header-item{
   margin-left: 50px;
 }
@@ -331,6 +333,7 @@ background-image: url("../images/astronaut.svg");
 
   color: var(--paragraph-text-color);
 }
+/* ----------------------------- */
 .our-team-soc{
   display: flex;
   justify-content: center;
@@ -338,15 +341,96 @@ background-image: url("../images/astronaut.svg");
 .team-soc-item{
   margin-top: 16px;
 }
-.team-soc-item:nth-child(n+2) {
-  margin-left: 10px;
+.team-soc-item:not(:last-child) {
+  margin-right: 10px;
 }
+
 .team-soc-link{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-color: blue;
+}
+.team-soc-icon{
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+}
+/* ----------------------------- */
+.footer-social-list {
+  display: flex;
+}
+
+
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff1a;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0px 4px 4px 0px #00000040;
   border-radius: 50%;
+}
+
+.footer-social-icon {
+  fill: var(--white-text-color);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
+}
+/* -----Clients----- */
+.client-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+}
+.client-list{
+display:flex;
+}
+.client-item{
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+.client-item:not(:first-child) {
+  margin-left: 30px;
+}
+.client-link{
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  color: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+.client-icon{
+  fill: currentColor;
 }
 /* -----Footer section----- */
 .footer {
@@ -354,6 +438,10 @@ background-image: url("../images/astronaut.svg");
   padding-top: 60px;
 
   background: #2f303a;
+}
+.footer-content{
+  display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   display: block;
@@ -393,6 +481,45 @@ background-image: url("../images/astronaut.svg");
 .footer-tel {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+.footer-social{
+  margin-left: 70px;
+}
+.footer-social-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+
+  margin-bottom: 20px;
+}
+.footer-social-list{
+display: flex;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff1a;
+  width: 44px;
+  height: 44px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 50%;
+}
+.footer-social-icon{
+  fill: var(--white-text-color);
+  width: 20px;
+  height: 20px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-text-color);
 }
 
 /* ------End of footer section------ */
