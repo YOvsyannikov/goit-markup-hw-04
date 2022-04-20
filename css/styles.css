@@ -90,9 +90,18 @@ body {
   display: flex;
   align-items: center;
 }
+
+.header-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-item:nth-child(n+2) {
+  margin-left: 50px;
+}
 .header-item-link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   text-decoration: none;
@@ -107,15 +116,6 @@ body {
 .header-contact {
   display: flex;
   margin-left: auto;
-}
-.header-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: inline-flex;
-  align-items: center;
-}
-.header-item:nth-child(n+2) {
-  margin-left: 50px;
 }
 .header-contact-link {
   display: flex;
